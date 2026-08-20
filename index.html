@@ -727,20 +727,33 @@
 
           <h3 class="h3 form-title">Start a Project</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+
+            <input type="hidden" name="access_key" value="4f5cc05d-da10-4b0d-b348-a8572564bd82">
+            <input type="hidden" name="subject" value="New Techjiku Website Enquiry">
+            <input type="hidden" name="from_name" value="Techjiku Website">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <input type="text" name="topic" class="form-input" placeholder="Topic / Project" required data-form-input>
+
+            <textarea name="message" class="form-input" placeholder="Tell us about your requirement" required data-form-input></textarea>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Enquiry</span>
             </button>
+
+            <a href="https://wa.me/919416383219" class="form-btn" target="_blank" rel="noopener">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <span>Chat on WhatsApp</span>
+            </a>
 
           </form>
 
